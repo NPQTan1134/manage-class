@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+:root {
+  --color-background: #7FBBE4;
+  --color-text: black;
+}
+
+.container {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #7FBBE4;
+  padding: 50px 50px;
+}
+
+.inner-top {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.inner-top .inner-logo img{
+  width: auto;
+  height: 150px;
+}
+
+.inner-top .inner-title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900px;
+  margin: 0;
+  flex: 1;
+}
+
+.inner-middle .inner-title {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.inner-middle .inner-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.inner-middle .inner-login-options a {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-middle .inner-login-options a .inner-image {
+  aspect-ratio: 200/200;
+}
+
+.inner-middle .inner-login-options a .inner-image img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.inner-middle .inner-login-options a .inner-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.inner-middle .inner-login-options a:hover .inner-title{
+  color: black;
+}
+
+
+
+
+
+
+
+
