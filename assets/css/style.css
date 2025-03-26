@@ -595,6 +595,89 @@ input[type="file"] {
   color: gray;
 }
 
+.section-2 {
+  background-color: var(--color-background);
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 24px;
+  /* overflow-y: auto;
+  max-height: calc(100vh - 120px); */
+}
+
+.section-2 .inner-title {
+  text-align: center;
+  margin-top: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.section-2 .inner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-2 .inner-group .inner-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.section-2 .inner-group .inner-input {
+  width: 90%;
+  height: 40px;
+  outline: none;
+  border: var(--color-background);
+  border-radius: 8px;
+  padding: 20px 10px;
+}
+
+.section-2 .inner-meta-button {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.section-2 .inner-meta-button .inner-button {
+  width: 80px;
+  height: 35px;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.section-2 .inner-meta-button .inner-button:first-child {
+  background-color: green;
+  color: #fff;
+}
+
+.section-2 .inner-meta-button .inner-button:first-child:hover {
+  background-color: rgb(10, 178, 10);
+}
+
+.section-2 .inner-meta-button .inner-button:last-child {
+  background-color: gray;
+}
+
+.section-2 .inner-meta-button .inner-button:last-child a {
+  color: #fff;
+}
+
+.section-2 .inner-meta-button .inner-button:last-child:hover {
+  background-color: rgb(73, 73, 73);
+}
+
+
+
 
 
 
