@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang Admin</title>
+  <title>Trang Tạo Lớp Tạm</title>
   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -172,7 +172,7 @@ li {
   padding: 30px 50px;
   background-color: #fff;
   overflow-y: auto;
-  max-height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
 }
 
 .section-1 .inner-header {
@@ -267,8 +267,7 @@ li {
 }
 
 .table-1 thead th:nth-child(2),
-.table-1 thead th:nth-child(5),
-.table-1 thead th:nth-child(4) {
+.table-1 thead th:nth-child(3) {
   text-align: center;
 }
 
@@ -298,9 +297,12 @@ li {
 }
 
 .table-1 tbody td:nth-child(2),
-.table-1 tbody td:nth-child(5),
-.table-1 tbody td:nth-child(4) {
+.table-1 tbody td:nth-child(3) {
   text-align: center;
+}
+
+.table-1 tbody td:last-child {
+  text-align: end;
 }
 
 .table-1 tbody td .inner-name {
@@ -312,30 +314,27 @@ li {
   font-size: 12px;
 }
 
-.table-1 .inner-list-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.table-1 .inner-list-button .inner-button {
-  background-color: transparent;
+.table-1 tbody td .inner-button {
+  background-color: rgb(8, 165, 8);
   border: 0;
-  width: 40px;
-  height: 40px;
+  outline: none;
   cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
 }
 
-.table-1 .inner-list-button .inner-button i {
-  font-size: 20px;
+.table-1 tbody td .inner-button a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
 }
 
-.table-1 .inner-list-button .inner-button:first-child i {
-  color: red;
+.table-1 tbody td .inner-button:hover {
+  background-color: rgb(106, 177, 0);
 }
-.table-1 .inner-list-button .inner-button:last-child i {
-  color: gray;
-}
+
+
+
 
 </style>
 <body>
@@ -394,7 +393,6 @@ li {
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
-            <button href="#" class="button-outline">Tạo Lớp Mới</button>
         </div>
       </div>
       <div class="table-1">
@@ -402,9 +400,6 @@ li {
           <thead> 
             <tr>
               <th>Tên Lớp</th>
-              <th>Nhóm</th>
-              <th>Ngày Tạo</th>
-              <th>Ngày Kết Thúc</th>
               <th>Số Lượng Sinh Viên</th>
               <th>Tên Giảng Viên</th>
               <th></th>
@@ -417,29 +412,15 @@ li {
                 <div class="inner-code">2024-2025.2.TIN4013.002</div>
               </td>
               <td>
-                <div class="inner-item">5</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2024</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2025</div>
-              </td>
-              <td>
                 <div class="inner-item">50</div>
               </td>
               <td>
                 <div class="inner-item">Nguyễn Xuân Huy</div>
               </td>
               <td>
-                <div class="inner-list-button">
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-circle-xmark"></i>
-                  </button>
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                  </button>
-                </div>
+                <button class="inner-button">
+                  <a href="index.html">Tạo Lớp</a>
+                </button>
               </td>
             </tr>
             <tr>
@@ -448,29 +429,15 @@ li {
                 <div class="inner-code">2024-2025.2.TIN4013.002</div>
               </td>
               <td>
-                <div class="inner-item">5</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2024</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2025</div>
-              </td>
-              <td>
                 <div class="inner-item">50</div>
               </td>
               <td>
                 <div class="inner-item">Nguyễn Xuân Huy</div>
               </td>
               <td>
-                <div class="inner-list-button">
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-circle-xmark"></i>
-                  </button>
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                  </button>
-                </div>
+                <button class="inner-button">
+                  <a href="index.html">Tạo Lớp</a>
+                </button>
               </td>
             </tr>
             <tr>
@@ -479,184 +446,15 @@ li {
                 <div class="inner-code">2024-2025.2.TIN4013.002</div>
               </td>
               <td>
-                <div class="inner-item">5</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2024</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2025</div>
-              </td>
-              <td>
                 <div class="inner-item">50</div>
               </td>
               <td>
                 <div class="inner-item">Nguyễn Xuân Huy</div>
               </td>
               <td>
-                <div class="inner-list-button">
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-circle-xmark"></i>
-                  </button>
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="inner-name">Kĩ Nghệ Phần Mềm</div>
-                <div class="inner-code">2024-2025.2.TIN4013.002</div>
-              </td>
-              <td>
-                <div class="inner-item">5</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2024</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2025</div>
-              </td>
-              <td>
-                <div class="inner-item">50</div>
-              </td>
-              <td>
-                <div class="inner-item">Nguyễn Xuân Huy</div>
-              </td>
-              <td>
-                <div class="inner-list-button">
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-circle-xmark"></i>
-                  </button>
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="inner-name">Kĩ Nghệ Phần Mềm</div>
-                <div class="inner-code">2024-2025.2.TIN4013.002</div>
-              </td>
-              <td>
-                <div class="inner-item">5</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2024</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2025</div>
-              </td>
-              <td>
-                <div class="inner-item">50</div>
-              </td>
-              <td>
-                <div class="inner-item">Nguyễn Xuân Huy</div>
-              </td>
-              <td>
-                <div class="inner-list-button">
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-circle-xmark"></i>
-                  </button>
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="inner-name">Kĩ Nghệ Phần Mềm</div>
-                <div class="inner-code">2024-2025.2.TIN4013.002</div>
-              </td>
-              <td>
-                <div class="inner-item">5</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2024</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2025</div>
-              </td>
-              <td>
-                <div class="inner-item">50</div>
-              </td>
-              <td>
-                <div class="inner-item">Nguyễn Xuân Huy</div>
-              </td>
-              <td>
-                <div class="inner-list-button">
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-circle-xmark"></i>
-                  </button>
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="inner-name">Kĩ Nghệ Phần Mềm</div>
-                <div class="inner-code">2024-2025.2.TIN4013.002</div>
-              </td>
-              <td>
-                <div class="inner-item">5</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2024</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2025</div>
-              </td>
-              <td>
-                <div class="inner-item">50</div>
-              </td>
-              <td>
-                <div class="inner-item">Nguyễn Xuân Huy</div>
-              </td>
-              <td>
-                <div class="inner-list-button">
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-circle-xmark"></i>
-                  </button>
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="inner-name">Kĩ Nghệ Phần Mềm</div>
-                <div class="inner-code">2024-2025.2.TIN4013.002</div>
-              </td>
-              <td>
-                <div class="inner-item">5</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2024</div>
-              </td>
-              <td>
-                <div class="inner-item">15/01/2025</div>
-              </td>
-              <td>
-                <div class="inner-item">50</div>
-              </td>
-              <td>
-                <div class="inner-item">Nguyễn Xuân Huy</div>
-              </td>
-              <td>
-                <div class="inner-list-button">
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-circle-xmark"></i>
-                  </button>
-                  <button class="inner-button" href="">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                  </button>
-                </div>
+                <button class="inner-button">
+                  <a href="index.html">Tạo Lớp</a>
+                </button>
               </td>
             </tr>
           </tbody>

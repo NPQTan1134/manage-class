@@ -2,12 +2,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang User</title>
+  <title>Trang Thêm Dữ Liệu</title>
   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -180,45 +180,122 @@ li {
   gap: 50px 20px;
 }
 
-.box-class {
-  width: 300px;
-  height: 250px;
+.section-4 {
+  background-color: var(--color-background);
   border-radius: 24px;
-  overflow: hidden;
+  padding: 60px 50px 40px 50px;
 }
 
-.box-class a .inner-box-code {
-  height: 55%;
-  background-color: rgb(175, 174, 174);
-  padding: 20px;
+.section-4 .form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.box-class a .inner-box-code span {
-  font-size: 25px;
+.section-4 .inner-group .inner-label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 20px;
   font-weight: 700;
   color: #fff;
+}
+
+.section-4 .inner-group select {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.section-4 .inner-group select option {
+  border-radius: 10px;
+  font-size: 15px;
   color: var(--color-text);
 }
 
-
-.box-class .inner-info {
-  background-color: var(--color-background);
-  height: calc(100% - 55%);
-  padding: 10px;
+.section-4 .inner-group {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.box-class .inner-info span {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+.section-4 .inner-group .inner-input {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.custom-file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #3898d9;
+  color: white;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.custom-file-upload:hover {
+  background-color: #2a7eb6;
+}
+
+.custom-file-upload i {
+  font-size: 20px;
+}
+
+.section-4 .inner-meta-button {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.section-4 .inner-meta-button .inner-button {
+  width: 80px;
+  height: 35px;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.section-4 .inner-meta-button .inner-button:first-child {
+  background-color: green;
   color: #fff;
 }
+
+.section-4 .inner-meta-button .inner-button:first-child:hover {
+  background-color: rgb(10, 178, 10);
+}
+
+.section-4 .inner-meta-button .inner-button:last-child {
+  background-color: gray;
+}
+
+.section-4 .inner-meta-button .inner-button:last-child a {
+  color: #fff;
+}
+
+.section-4 .inner-meta-button .inner-button:last-child:hover {
+  background-color: rgb(73, 73, 73);
+}
+
+
+
+
+
 
 
 </style>
@@ -236,14 +313,14 @@ li {
     </div>
     <div class="inner-menu">
       <ul>
-        <li class="active">
+        <li>
           <a href="#">
             Trang Chủ
           </a>
         </li>
-        <li>
+        <li class="active">
           <a href="#">
-            Profile 
+            Thêm Dữ Liệu
           </a>
         </li>
         <li>
@@ -259,50 +336,40 @@ li {
       <div class="inner-list-icon">
         <ul>
           <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
-          <li><a href="#"><i class="fa-regular fa-clipboard"></i></a></li>
           <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i></a></li>
         </ul>
       </div>
       <h1 class="inner-title">
-        Trang Chủ 
+        Thêm Dữ Liệu
       </h1>
     </div>
     <div class="main-middle">
-      <div class="inner-list">
-        <div class="box-class">
-          <a href="#">
-            <div class="inner-box-code">
-              <span>TANDT-01</span>
-            </div>
-            <div class="inner-info">
-              <span>  Lớp Tán Gái Agentina Brazil</span>
-              <span>TH5 - 7h30</span>
-            </div>
-          </a>
-        </div>
-        <div class="box-class">
-          <a href="#">
-            <div class="inner-box-code">
-              <span>TANDT-01</span>
-            </div>
-            <div class="inner-info">
-              <span>  Lớp Tán Gái Agentina Brazil</span>
-              <span>TH5 - 7h30</span>
-            </div>
-          </a>
-        </div>
-        <div class="box-class">
-          <a href="#">
-            <div class="inner-box-code">
-              <span>TANDT-01</span>
-            </div>
-            <div class="inner-info">
-              <span>  Lớp Tán Gái Agentina Brazil</span>
-              <span>TH5 - 7h30</span>
-            </div>
-          </a>
-        </div>  
-       
+      <div class="section-4">
+        <form action="" method="" class="form">
+          <div class="inner-group">
+            <label for="choose" class="inner-label">Chọn nội dung cần thêm:</label>
+            <select name="" id="choose">
+              <option value="lop">Lớp</option>
+              <option value="gvmoi">Giảng Viên Mới</option>
+              <option value="gv">Giảng Viên Vào Lớp</option>
+              <option value="svmoi">Sinh Viên Mới</option>
+              <option value="svsv">Sinh Viên Vào Lớp</option>
+            </select>
+          </div>
+          <div class="inner-group">
+            <label for="file-upload" class="inner-label">Dữ liệu</label>
+              <!-- <input type="file" name="" id="" class="inner-input"> -->
+              <label for="file-upload" class="custom-file-upload">
+                <i class="fa-solid fa-upload"></i> Chọn tệp
+              </label>
+              <input type="file" name="" id="file-upload" class="inner-input">
+            </select>
+          </div>
+          <div class="inner-meta-button">
+            <button class="inner-button">Tạo</button>
+            <button class="inner-button">Hủy</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
